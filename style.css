@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap');
+
+/* FONT FAMILIES
+  font-family: 'Lato';
+*/
+
+/* COLORS
+  light-orange: #F0AD4E;
+  orange:       #F17B18;
+  green:        #108C3C;
+*/
+
+
+/* general styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  overflow-x: hidden;
+}
+
+section {
+  /* padding: 4.125em 0 4.125em; */
+}
+
+.section-container {
+  padding: 4.125em 10%;
+  /* width: 80%; */
+  margin: 0 auto;
+}
+
+.intro-background h1 {
+  margin: 2em 0 .5em 0;
+  color: white;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.95em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h4 strike {
+  color: #108C3C;
+}
+
+h5 {
+  font-size: 1.3125em;
+  color: white;
+}
+
+a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.col-2 {
+  width: 49.5%;
+  display: inline-block;
+  text-align: center;
+  /* vertical-align: top; */
+}
+
+.col-3 {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+
+.black-background {
+  background-color: black;
+  color: white;
+}
+
+.white-background {
+  background-color: white;
+  color: black;
+}
+
+.side-heading {
+  width: 30%;
+  padding: 1.25em;
+  background-color: rgba(112,112,112,.3);
+  font-size: 1.3125em;
+  font-weight: 400;
+  margin: 3em 0 0;
+}
+
+.orange {
+  color: #F17B18;
+}
+
+button {
+  background-color: Transparent;
+  background-image: url('./img/icons/button_g_230x60_test-01.svg');
+  background-repeat: no-repeat;
+  border: none;
+  margin: 2em auto;
+  width: 235px;
+  height: 62px;
+  color: white;
+  font-size: 1.3125em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background-image: url("./img/icons/button_g_230x60-01.svg")
+}
+
+.button-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.flip {
+  transform: rotate(-90deg);
+  overflow-x: hidden;
+}
+
+/*****************************************
+                  NAV
+*****************************************/
+
+nav {
+  margin-top: 1.2em;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-nav a {
+  margin: 0 7% 0;
+  vertical-align:top;
+  line-height: 6.25em;
+  letter-spacing: .1em;
+}
+
+.main-nav a:first-of-type, .main-nav a:last-of-type {
+  margin: 0;
+}
+
+.logo {
+  background-image: url("./img/icons/logo_150x87px.svg");
+  background-size: cover;
+  display: inline-block;
+  width: 150px;
+  height: 87px;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+/*****************************************
+                  INTRO
+*****************************************/
+
+.intro-images {
+  text-align: center;
+}
+
+.intro-images .col-3 {
+  width: 25%;
+  vertical-align: bottom;
+}
+
+.intro-images img {
+  border-radius: 100%;
+  box-shadow: 1px 1px 2px white;
+  border: 1px solid #707070;
+  /* margin: 9em 0 0 0; */
+}
+
+#intro-button {
+  text-align: center;
+  margin: 5em 0;
+}
+
+.intro-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 950px;
+  width: 100%;
+}
+
+/* home intro */
+
+.home-background {
+  background-image: url("./img/home_background.jpg");
+}
+
+.home-background h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.home-background h1 span, .home-background h3 span {
+  color: #F17B18;
+}
+
+/* purchase intro */
+
+.purchase-background {
+  color: white;
+}
+
+.purchase-background {
+  background-image: url("./img/purchase_background.jpg");
+}
+
+.purchase {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 4.125em;
+}
+
+.purchase .col-3 {
+  /* width: 25%; */
+}
+
+.purchase h5 {
+  color: black;
+}
+
+.breadcrumb {
+  width: 100%;
+  margin: 2em;
+  padding: 5px;
+}
+
+.breadcrumb .col-3:first-child {
+  text-align: left;
+  padding-left: 4em;
+}
+
+.breadcrumb h1 {
+  margin: 0;
+}
+
+.breadcrumb p {
+  display: block;
+}
+
+.breadcrumb a {
+  color: black;
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+.breadcrumb a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* contact intro */
+
+.contact-background {
+  background-image: url("./img/contact_background.jpg");
+  width: 100%;
+}
+
+section.intro-info .col-3 {
+  vertical-align: middle;
+  min-height: 500px;
+  text-align: left;
+}
+
+.intro-info {
+  color: white;
+  text-align: center;
+}
+
+.shadow {
+  padding: 5px;
+}
+
+.intro-info img, .history .shadow img {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 0 7px white;
+  border-radius: 5px;
+}
+
+.intro-info .col-3:last-of-type h4 {
+  margin: 2em 0 0;
+}
+
+.intro-info p {
+  margin: 2em 0 2em;
+}
+
+.intro-info p:last-child {
+  /* margin: 2em 0 0; */
+}
+
+/* about intro */
+
+.about-background {
+  background-image: url("./img/about_background.jpg");
+  width: 100%;
+}
+
+.history .section-container {
+  text-align: center;
+  display: block;
+}
+
+.history .col-2 {
+  vertical-align: top;
+}
+
+.history-container {
+  width: 75%;
+  text-align: left;
+  display: inline-block;
+}
+
+.history-container h4 {
+  margin-bottom: 2em;
+}
+
+.history-container p {
+  margin: 1em 0;
+}
+
+.history-container p:last-of-type {
+  /* margin: 0; */
+}
+
+/*****************************************
+              MAIN CONTENT
+*****************************************/
+
+/* testimonial */
+
+.testimonial {
+  display: inline-block;
+  width: 100%;
+  padding: 5em 0 5em;
+}
+
+.testimonial-col {
+  background: #707070;
+  width: 50%;
+  padding: 2.5em;
+  text-align: center;
+  border-radius: 0 20px 0 0;
+}
+
+.testimonial-col:last-of-type {
+  float: right;
+  border-radius: 0 0 0 20px;
+}
+
+.testimonial-col h5 {
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+.testimonial-col h5:last-of-type {
+  padding-top: .75em;
+}
+
+/* table // shoe guide */
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  display: inline-block;
+}
+
+.shoe-guide-container {
+  width: 20%;
+  float: right;
+  display: inline-block;
+  margin-right: 7em;
+}
+
+#shoe-guide {
+  background: url("./img/shoe_guide.svg");
+  background-repeat: no-repeat;
+  height: 216px;
+  width: 264px;
+  display: inline-block;
+}
+
+tr {
+  height: 3em;
+  font-size: 1.5em;
+}
+
+tr:first-of-type {
+  border-bottom: 1px solid #707070;
+}
+
+td {
+  padding: 0 .8em;
+}
+
+td:first-of-type {
+  padding-right: 3em;
+}
+
+/* Limited offers */
+
+.shoe-display {
+  position: relative;
+  /* width: 80%; */
+  margin: 0 2em;
+  background: #fff;
+  color: black;
+}
+
+.shoe-display img {
+  width: 100%;
+}
+
+.expire {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .5em;
+  background: #F0AD4E;
+}
+
+.shoe-display .col-2 {
+  /* width: 49%; */
+  margin: 1em 0 0 0;
+}
+
+.shoe-display button {
+  width: 243px;
+  height: 61px;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Newsletter */
+
+section.newsletter {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.newsletter h4:first-of-type {
+  margin: 0 0 1em;
+}
+
+.newsletter h4 {
+  margin: 0 0 2em;
+}
+
+.newsletter input[type="email"] {
+  width: 30em;
+  /* height: 2.4em; */
+  padding: .6em;
+  font-size: 1.3125em;
+  border: none;
+  border-bottom: 1px solid #707070;
+}
+
+.newsletter input[type="submit"], .customize input[type="submit"] {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 2em auto;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"] {
+  background-image: url("./img/icons/button_o_310x80.svg");
+  width: 310px;
+  height: 80px;
+  font-size: 2em;
+  color: black;
+  display: block;
+}
+
+.customize input[type="submit"] {
+  background-image: url("./img/icons/button_g_230x60.svg");
+  width: 235px;
+  height: 62px;
+  font-size: 1.5em;
+  color: white;
+  display: inline-block;
+}
+
+/* letha protection */
+
+section.protection {
+  padding: 7em 10%;
+}
+
+.protection .col-3{
+  color: #F17B18;
+  vertical-align: middle;
+}
+
+.protection .col-3 img {
+  border-radius: 170px;
+}
+
+/* customer service */
+
+.customer-service .section-container {
+  padding: 7em 0;
+}
+
+.customer-service .col-2 {
+  vertical-align: middle;
+}
+
+.customer-service h3 {
+  /* margin: 0 0 1em; */
+}
+
+.customer-service h3::before {
+  background-image: url("./img/icons/phone_70x70.svg");
+  display: inline-block;
+  content: ' ';
+  background-size: 70px 70px;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+/* our staff */
+
+.staff .side-heading {
+  color: white;
+}
+
+section.staff {
+  background-color: black;
+}
+
+.staff img {
+  width: 100%;
+}
+
+.staff .col-3 {
+  background-color: white;
+  margin: 1em;
+  width: 29%;
+}
+
+.staff .col-3 h4 {
+  font-weight: 300;
+  padding: 0 0 .5em;
+}
+
+.staff .col-3 h4:first-of-type {
+  font-weight: 400;
+  padding: .5em;
+}
+
+.customize {
+  width: 75%;
+  height: 400px;
+  overflow-y: hidden;
+  margin: 0 auto;
+  border: 1px solid #808080;
+}
+
+.customize .col-2 {
+  vertical-align: top;
+  text-align: left;
+}
+
+.customize img {
+  height: 400px;
+}
+
+.customize select {
+  width: 60%;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: white;
+  padding: 4px;
+}
+
+.customize-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.customize-container h5 {
+  color: black;
+  margin: 4em 0 1em;
+}
+
+.shoe-color {
+  margin: 1em 0;
+}
+
+/*****************************************
+                FOOTER
+*****************************************/
+
+footer {
+  background: black;
+}
+
+footer .col-3 {
+  vertical-align: middle;
+  text-align: center;
+}
+
+footer .social a {
+  cursor: pointer;
+}
+
+footer i {
+  margin: 1.8em 0;
+  display: block;
+  width: 100%;
+}
+
+.fab {
+  color: white;
+  font-size: 3em;
+}
+
+footer ul li {
+  margin: 1.2em;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

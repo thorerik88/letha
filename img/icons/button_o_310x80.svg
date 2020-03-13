@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 314 83" style="enable-background:new 0 0 314 83;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#12B568;stroke-width:1.5;stroke-miterlimit:10;}
+	.st1{opacity:0.3;fill:#FFFFFF;}
+	.st2{fill:url(#Rectangle_37_2_);stroke:#FFCC33;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+</style>
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3" y1="-33.5" x2="3" y2="-93.5">
+			<stop  offset="0" style="stop-color:#048637"/>
+			<stop  offset="1" style="stop-color:#5CB85C"/>
+		</linearGradient>
+		<path class="st0" d="M88-33.5H-82c-16.6,0-30-13.4-30-30v0c0-16.6,13.4-30,30-30H88c16.6,0,30,13.4,30,30v0
+			C118-46.9,104.6-33.5,88-33.5z"/>
+		<path class="st1" d="M-82.6-87.1H88.6c13.8,0,25.1,11,25.9,24.8c0-0.6,0.1-1.1,0.1-1.7c0-14.6-11.7-26.5-26-26.5H-82.6
+			c-14.3,0-26,11.9-26,26.5c0,0.6,0,1.2,0.1,1.7C-107.6-76.1-96.4-87.1-82.6-87.1z"/>
+	</g>
+</g>
+<g id="Mask_Group_7_1_" transform="translate(37 106)">
+	<g transform="translate(421.456 2858)">
+		<g>
+			
+				<linearGradient id="Rectangle_37_2_" gradientUnits="userSpaceOnUse" x1="-691.6842" y1="-2771.3308" x2="-691.6842" y2="-2770.3147" gradientTransform="matrix(307.819 0 0 -78.731 212612.0781 -221072.1563)">
+				<stop  offset="8.000000e-03" style="stop-color:#EE5F13"/>
+				<stop  offset="0.994" style="stop-color:#FAB823"/>
+			</linearGradient>
+			<path id="Rectangle_37_1_" class="st2" d="M-416.8-2962.5h230.7c21.9,0,39.6,17.9,39.6,40v0c0,22.1-17.7,40-39.6,40h-230.7
+				c-21.9,0-39.6-17.9-39.6-40v0C-456.5-2944.6-438.7-2962.5-416.8-2962.5z"/>
+			<path id="Path_34_1_" class="st3" d="M-416.8-2954h230.7c18.5,0,33.7,14.5,35,33.1c0-0.8,0.1-1.5,0.1-2.3
+				c0-19.5-15.7-35.4-35.1-35.4h-230.7c-19.4,0-35.1,15.9-35.1,35.4c0,0.8,0.1,1.5,0.1,2.3C-450.6-2939.5-435.3-2953.9-416.8-2954z"
+				/>
+		</g>
+	</g>
+</g>
+</svg>
