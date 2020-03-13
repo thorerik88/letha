@@ -416,7 +416,7 @@ tr {
   font-size: 1.5em;
 }
 
-tr:first-of-type {
+.guide tr:first-of-type {
   border-bottom: 1px solid #707070;
 }
 
@@ -596,12 +596,13 @@ section.staff {
   text-align: left;
 }
 
+
 .customize img {
   height: 400px;
 }
 
 .customize select {
-  width: 60%;
+  width: 70%;
   font-size: 1em;
   border-radius: 5px;
   background-color: white;
@@ -615,12 +616,91 @@ section.staff {
 
 .customize-container h5 {
   color: black;
-  margin: 4em 0 1em;
+  margin: 2em 0 .7em;
 }
 
-.shoe-color {
-  margin: 1em 0;
+.customize-container p {
+  margin: 0 0 .7em;
 }
+
+.customize select {
+  margin: .5em 0;
+}
+
+.customize select:last-of-type {
+  margin: .5 0 0;
+}
+
+/* My Shopping Cart */
+
+.shopping-cart {
+  text-align: center;
+}
+
+.cart-image {
+  display: inline-block;
+  width: 25%;
+}
+
+.shopping-cart td img{
+  width: 100px;
+  height: 80px;
+  margin: 2em;
+}
+
+.shopping-cart td, .shopping-cart tr {
+  text-align: left;
+}
+
+.shopping-cart tr:first-child {
+  font-weight: 700;
+}
+
+.shopping-cart tr td:nth-of-type(2) {
+  padding-left: 0;
+}
+
+.shopping-cart table {
+  width: 70%;
+  display: inline-block;
+}
+
+.shopping-cart table tr:last-of-type td {
+  border-top: 1px solid #707070;
+  font-weight: 700;
+}
+
+.shopping-cart table tr:last-of-type td:first-of-type {
+  color: red;
+  border-top: none;
+}
+
+.shopping-cart button {
+  display: block;
+}
+
+.number-input {
+  width: 15%;
+}
+
+input[name="quantity"] {
+  width: 25%;
+  font-size: 1em;
+}
+
+.delete {
+  display: inline-block;
+  background-image: url("./img/icons/close-01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+
+
 
 /*****************************************
                 FOOTER
