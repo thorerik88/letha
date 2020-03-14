@@ -796,9 +796,53 @@ input[name="quantity"] {
   display: inline-block;
 }
 
+/*****************************************
+                MODAL
+*****************************************/
 
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 1;
+}
 
+.modal-box {
+  position: relative;
+  background-color: white;
+  margin: 14em auto;
+}
 
+.modal-container {
+  padding: 2em;
+}
+
+.modal-container h1::before {
+  background-image: url("./img/icons/check_g_75x75.svg");
+  background-size: cover;
+  vertical-align: middle;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  margin: 1em 1em 1.3em;
+  content: "";
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("./img/icons/close-01.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 1em;
+}
 
 
 
