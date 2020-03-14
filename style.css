@@ -495,7 +495,7 @@ section.newsletter {
   background-repeat: no-repeat;
   border: none;
   margin: 2em auto;
-  font-weight: 300;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -505,6 +505,7 @@ section.newsletter {
   height: 80px;
   font-size: 2em;
   color: black;
+  font-weight: 700;
   display: block;
 }
 
