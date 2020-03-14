@@ -110,9 +110,11 @@ a {
   color: #F17B18;
 }
 
-button {
+
+
+button, input[type="submit"] {
   background-color: Transparent;
-  background-image: url('./img/icons/button_g_230x60_test-01.svg');
+  background-image: url('./img/icons/button_g_230x60unclicked.svg');
   background-repeat: no-repeat;
   border: none;
   margin: 2em auto;
@@ -122,10 +124,11 @@ button {
   font-size: 1.3125em;
   cursor: pointer;
   display: inline-block;
+  outline: none;
 }
 
 button:hover {
-  background-image: url("./img/icons/button_g_230x60-01.svg")
+  background-image: url("./img/icons/button_g_230x60clicked.svg");
 }
 
 .button-container {
@@ -137,12 +140,6 @@ button:hover {
 .flip {
   transform: rotate(-90deg);
   overflow-x: hidden;
-}
-
-.active {
-  background-color: rgba(255,255,255,.8);
-  color: black;
-  font-weight: 700;
 }
 
 /*****************************************
@@ -163,10 +160,16 @@ nav {
 
 .main-nav a {
   margin: 0 7% 0;
+  font-weight: 700;
   vertical-align:top;
   line-height: 6.25em;
   letter-spacing: .1em;
   font-size: 1.3em;
+}
+
+.main-nav a:hover:not(.logo), .active {
+  background-color: rgba(255,255,255,.8);
+  color: black;
 }
 
 .main-nav a:first-of-type, .main-nav a:last-of-type {
@@ -500,7 +503,7 @@ section.newsletter {
 }
 
 .newsletter input[type="submit"] {
-  background-image: url("./img/icons/button_o_310x80.svg");
+  background-image: url("./img/icons/button_o_230x60unclicked.svg");
   width: 310px;
   height: 80px;
   font-size: 2em;
@@ -509,14 +512,23 @@ section.newsletter {
   display: block;
 }
 
+.newsletter input[type="submit"]:hover {
+  background-image: url("./img/icons/button_o_230x60clicked.svg")
+}
+
 .customize input[type="submit"], .check-cred input[type="submit"] {
-  background-image: url("./img/icons/button_g_230x60.svg");
+  background-image: url("./img/icons/button_g_230x60unclicked.svg");
   width: 235px;
   height: 62px;
   font-size: 1.5em;
   color: white;
   display: inline-block;
 }
+
+.customize input[type="submit"]:hover , .check-cred input[type="submit"]:hover {
+    background-image: url("./img/icons/button_g_230x60clicked.svg");
+}
+
 
 /* letha protection */
 
@@ -791,18 +803,22 @@ input[name="quantity"] {
 
 .discount input {
   display: inline-block;
-  width: 55%;
+  width: 48%;
   margin-right: 1em;
 }
 
 .discount button {
-  background-image: url("./img/icons/button_o_135x35.svg");
-  height: 30px;
-  width: 110px;
+  background-image: url("./img/icons/button_o_230x60unclicked.svg");
+  height: 35px;
+  width: 130px;
   font-size: 1em;
   font-weight: 700;
   color: black;
   display: inline-block;
+}
+
+.discount button:hover {
+  background-image: url("./img/icons/button_o_230x60clicked.svg");
 }
 
 /*****************************************
