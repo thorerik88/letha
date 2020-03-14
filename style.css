@@ -64,7 +64,7 @@ h5 {
 }
 
 a {
-  font-size: 1.3em;
+  font-size: 1em;
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -139,6 +139,12 @@ button:hover {
   overflow-x: hidden;
 }
 
+.active {
+  background-color: rgba(255,255,255,.8);
+  color: black;
+  font-weight: 700;
+}
+
 /*****************************************
                   NAV
 *****************************************/
@@ -160,6 +166,7 @@ nav {
   vertical-align:top;
   line-height: 6.25em;
   letter-spacing: .1em;
+  font-size: 1.3em;
 }
 
 .main-nav a:first-of-type, .main-nav a:last-of-type {
@@ -456,9 +463,6 @@ td:first-of-type {
 }
 
 .shoe-display button {
-  width: 243px;
-  height: 61px;
-  color: white;
   font-size: 1.5em;
 }
 
@@ -491,7 +495,7 @@ section.newsletter {
   background-repeat: no-repeat;
   border: none;
   margin: 2em auto;
-  font-weight: 700;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -607,6 +611,15 @@ section.staff {
   border-radius: 5px;
   background-color: white;
   padding: 4px;
+  margin: .5em 0;
+}
+
+.customize select:last-of-type {
+  margin: .5 0 0;
+}
+
+.customize-container input[value="SELECT"] {
+  font-weight: 300;
 }
 
 .customize-container {
@@ -623,13 +636,8 @@ section.staff {
   margin: 0 0 .7em;
 }
 
-.customize select {
-  margin: .5em 0;
-}
 
-.customize select:last-of-type {
-  margin: .5 0 0;
-}
+
 
 /* My Shopping Cart */
 
