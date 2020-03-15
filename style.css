@@ -21,10 +21,6 @@
   overflow-x: hidden;
 }
 
-section {
-  /* padding: 4.125em 0 4.125em; */
-}
-
 .section-container {
   padding: 4.125em 10%;
   /* width: 80%; */
@@ -167,7 +163,7 @@ nav {
   font-size: 1.3em;
 }
 
-.main-nav a:hover:not(.logo), .active {
+.main-nav a:hover:not(.logo), footer a:hover:not(.logo), .active {
   background-color: rgba(255,255,255,.8);
   color: black;
 }
@@ -326,10 +322,6 @@ section.intro-info .col-3 {
   margin: 2em 0 2em;
 }
 
-.intro-info p:last-child {
-  /* margin: 2em 0 0; */
-}
-
 /* about intro */
 
 .about-background {
@@ -337,32 +329,6 @@ section.intro-info .col-3 {
   width: 100%;
 }
 
-.history .section-container {
-  text-align: center;
-  display: block;
-}
-
-.history .col-2 {
-  vertical-align: top;
-}
-
-.history-container {
-  width: 75%;
-  text-align: left;
-  display: inline-block;
-}
-
-.history-container h4 {
-  margin-bottom: 2em;
-}
-
-.history-container p {
-  margin: 1em 0;
-}
-
-.history-container p:last-of-type {
-  /* margin: 0; */
-}
 
 /*****************************************
               MAIN CONTENT
@@ -476,6 +442,28 @@ section.newsletter {
   margin-top: 4em;
 }
 
+.newsletter form {
+  position: relative;
+}
+
+.newsletter .message {
+  bottom: .5em;
+  left: 35%;
+  text-align: center;
+  color: #108C3C;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.discount .message {
+  color: red;
+}
+
 .newsletter h4:first-of-type {
   margin: 0 0 1em;
 }
@@ -486,12 +474,13 @@ section.newsletter {
 
 .newsletter input[type="email"] {
   width: 30em;
-  /* height: 2.4em; */
   padding: .6em;
   font-size: 1.3125em;
   border: none;
   border-bottom: 1px solid #707070;
 }
+
+
 
 .newsletter input[type="submit"], .customize input[type="submit"], .check-cred input[type="submit"] {
   background-color: Transparent;
@@ -600,6 +589,33 @@ section.staff {
   padding: .5em;
 }
 
+/* about history section */
+
+.history .section-container {
+  text-align: center;
+  display: block;
+}
+
+.history .col-2 {
+  vertical-align: top;
+}
+
+.history-container {
+  width: 75%;
+  text-align: left;
+  display: inline-block;
+}
+
+.history-container h4 {
+  margin-bottom: 2em;
+}
+
+.history-container p {
+  margin: 1em 0;
+}
+
+/* customize your shoe */
+
 .customize {
   width: 75%;
   height: 400px;
@@ -648,9 +664,6 @@ section.staff {
 .customize-container p {
   margin: 0 0 .7em;
 }
-
-
-
 
 /* My Shopping Cart */
 
@@ -844,13 +857,9 @@ input[name="quantity"] {
 }
 
 .modal-container {
-  /* width: 60%; */
   text-align: center;
 }
 
-.modal-container h1 {
-
-}
 
 .modal-container h1::before {
   background-image: url("./img/icons/check_g_75x75.svg");

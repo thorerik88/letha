@@ -24,15 +24,15 @@
     </div>
       <div class="breadcrumb">
         <div class="col-3">
-          <p>
-            You are here: <a href="purchase.html">purchase</a> >
-                          <a href="customize.html">customize</a> >
-                          <a href="my_shopping_cart.html">my shopping cart</a> >
-                          check out
+          <p>You are here:
+            <a href="purchase.html">purchase</a> >
+            <a href="customize.html">customize</a> >
+            <a href="my_shopping_cart.html">my shopping cart</a> > <strong>check out</strong>
           </p>
         </div>
       </div>
       <h1 class="black">CHECK OUT</h1>
+      <!-- Order Summary -->
       <section class="section-container">
         <div class="check-out">
           <div class="check-summary">
@@ -46,6 +46,7 @@
               </div>
             </div>
           </div>
+          <!-- Credentials -->
           <div class="check-cred">
             <div class="check-container">
               <form class="" action="index.html" method="post">
@@ -71,8 +72,6 @@
                 </div>
                 <label for="">Country</label>
                 <input type="text" name="country" value="">
-
-
                 <label for="">Payment method</label>
                 <div class="payment">
                   <input type="radio" name="payment" value="Credit card">
@@ -80,9 +79,9 @@
                   <input type="radio" name="payment" value="Invoice">
                   <p>Invoice</p>
                 </div>
-
                 <label for="">Discount code (optional)</label>
                 <div class="discount">
+                  <span class="message">Sorry, the discount code couldn't be verified. Please check code and try again.</span>
                   <input type="code" name="discount" value="xxxx-xxxx-xxxx-xxxx">
                   <button type="button" name="discount">Verify code</button>
                 </div>
@@ -92,6 +91,7 @@
           </div>
         </div>
       </section>
+      <!-- Letha Protection -->
       <section class="section-container protection black-background">
         <div class="col-3">
           <h2>Letha Protection &trade;</h2>
@@ -104,7 +104,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </section>
-
+      <!-- newsletter -->
       <section class="newsletter white-background">
         <h4>JOIN OUR NEWSLETTER</h4>
         <h4>Get 10% off your first order</h4>
@@ -113,7 +113,6 @@
           <input type="submit" name="submit" value="SUBSCRIBE">
         </form>
       </section>
-
       <!-- MODAL -->
       <div class="modal">
         <div class="modal-box">
@@ -124,8 +123,6 @@
           </div>
         </div>
       </div>
-
-
       <footer>
         <div class="col-3">
           <ul>
@@ -146,5 +143,6 @@
         <p>&copy; 2020 - Thor-Erik Støvland</p>
       </footer>
       <script type="text/javascript" src="./script.js" defer></script>
+      <script type="text/javascript" src="./modal.js" defer></script>
     </body>
   </html>
