@@ -251,10 +251,6 @@ nav {
   /* width: 25%; */
 }
 
-.purchase h5 {
-  color: black;
-}
-
 .breadcrumb {
   width: 100%;
   margin: 2em;
@@ -409,13 +405,30 @@ td:first-of-type {
 .shoe-display {
   position: relative;
   /* width: 80%; */
-  margin: 0 2em;
+  margin: 1em 1em 2em;
   background: #fff;
   color: black;
 }
 
+.shoe-display .col-2 {
+  text-align: left;
+}
+
 .shoe-display img {
   width: 100%;
+  height: 300px;
+}
+
+.shoe-display h5 {
+  margin-bottom: 1em;
+  color: black;
+}
+
+.shoe-display-container {
+  width: 80%;
+  min-height: 200px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .expire {
@@ -505,7 +518,7 @@ section.newsletter {
   background-image: url("./img/icons/button_o_230x60clicked.svg")
 }
 
-.customize input[type="submit"], .check-cred input[type="submit"] {
+.customize input[type="submit"], .check-cred input[type="submit"], .purchase button {
   background-image: url("./img/icons/button_g_230x60unclicked.svg");
   width: 235px;
   height: 62px;
@@ -514,7 +527,7 @@ section.newsletter {
   display: inline-block;
 }
 
-.customize input[type="submit"]:hover , .check-cred input[type="submit"]:hover {
+.customize input[type="submit"]:hover , .check-cred input[type="submit"]:hover, .purchase button:hover {
     background-image: url("./img/icons/button_g_230x60clicked.svg");
 }
 

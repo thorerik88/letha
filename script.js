@@ -3,7 +3,7 @@ const modalTrigger = document.querySelector(".check-container input[type='submit
 const modalCloseButton = document.querySelector(".modal-close");
 const newsletterMsg = document.querySelector(".message");
 const inputs = document.querySelectorAll("input[type='email']");
-const deleteShoe = document.querySelector(".delete");
+
 const customShoe = document.querySelector(".shopping-cart .selected");
 const totalCost = document.querySelector(".total-cost");
 
@@ -22,10 +22,4 @@ newsletterButton.addEventListener("click", function(e){
   setInterval(function() {
     newsletterMsg.style.display = "none";
   }, 3000)
-})
-
-// delete selected shoe in Cart
-deleteShoe.addEventListener("click", function() {
-  customShoe.style.visibility = "hidden";
-  totalCost.innerHTML = "$ 0"
 })
