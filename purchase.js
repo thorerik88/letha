@@ -5,20 +5,15 @@ const imageBox = document.querySelector(".purchase");
 
 
 data.forEach(shoe => {
-  shoeName = shoe.name;
-  shoeId = shoe.id;
-  shoeImageUrl = shoe.imageUrl;
-  shoeDescription = shoe.description;
-  shoePrice = shoe.price;
-  setHTML(shoeName, shoeId, shoeImageUrl, shoeDescription, shoePrice);
+  setHTML(shoe.name, shoe.id, shoe.imageUrl, shoe.description, shoe.price, shoe.alt);
 })
 
-function setHTML (name, id, url, desc, price) {
+function setHTML (name, id, url, desc, price, alt) {
     console.log(imageBox)
     imageBox.innerHTML += `
                       <div class="col-3">
                         <div class="shoe-display">
-                          <img src="${url}" alt="">
+                          <img src="${url}" alt="${alt}">
                           <div class="shoe-display-container">
                             <div class="col-2">
                               <h5>${name}</h5>
@@ -28,9 +23,9 @@ function setHTML (name, id, url, desc, price) {
                             </div>
                             <p>${desc}</p>
                           </div>
-                          <button>
-                            <a href="customize.html?id=${id}">SELECT</a>
-                          </button>
+
+                            <a href="customize.html?id=${id}"><button>SELECT</button></a>
+
                         </div>
                       </div>`;
 }
@@ -41,6 +36,5 @@ imageBoxBtn.forEach(btn => {
     let element = e.target.parentNode;
     let image = element.querySelector("img");
     let urlQuery = image.alt;
-
   })
 })

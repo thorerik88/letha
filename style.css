@@ -404,7 +404,8 @@ td:first-of-type {
 
 .shoe-display {
   position: relative;
-  /* width: 80%; */
+  display: inline-block;
+  width: 80%;
   margin: 1em 1em 2em;
   background: #fff;
   color: black;
@@ -630,8 +631,8 @@ section.staff {
 /* customize your shoe */
 
 .customize {
-  width: 75%;
-  height: 400px;
+  max-width: 75%;
+  min-height: 360px;
   overflow-y: hidden;
   margin: 0 auto;
   border: 1px solid #808080;
@@ -644,7 +645,7 @@ section.staff {
 
 
 .customize img {
-  height: 400px;
+  width: 100%;
 }
 
 .customize select {
@@ -733,6 +734,7 @@ section.staff {
 input[name="quantity"] {
   width: 25%;
   font-size: 1em;
+  text-align: center;
 }
 
 .delete {

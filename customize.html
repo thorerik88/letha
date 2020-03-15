@@ -35,26 +35,21 @@
       <section class="section-container white-background">
         <div class="customize">
           <div class="col-2">
-            <img src="./img/casual.jpg" alt="">
+            <img src="" alt="">
           </div>
           <div class="col-2">
-            <form class="" action="my_shopping_cart.html" method="post">
+            <form class="" action="my_shopping_cart.html" method="get">
+              <input type="hidden" name="id" value="">
               <div class="customize-container">
-                <h5>Letha Casual</h5>
+                <h5></h5>
                 <div class="col-2">
                   <p>Price:</p>
                 </div>
                 <div class="col-2">
                   <p>$ 149.00</p>
                 </div>
-                <select class="shoe-color" name="shoe-color">
-                  <option value="choice-color">Choose Color</option>
-                  <option value="brown">Brown</option>
-                  <option value="Beige">Beige</option>
-                  <option value="Black">Black</option>
-                  <option value="brown">White</option>
-                </select>
                 <select class="shoe-size" name="shoe-size">
+                  <option value="choice-color">Choose Size</option>
                   <option value="40">40</option>
                   <option value="41">41</option>
                   <option value="42">42</option>
@@ -66,6 +61,7 @@
                   <option value="48">48</option>
                 </select>
                 <select class="shoe-qty" name="shoe-qty">
+                  <option value="choice-qty">Choose Quantity</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -120,5 +116,7 @@
         <p>&copy; 2020 - Thor-Erik Støvland</p>
       </footer>
       <script type="text/javascript" src="./script.js" defer></script>
+      <script type="text/javascript" src="./shoes.json" defer></script>
+      <script type="text/javascript" src="./customize.js" defer></script>
     </body>
   </html>

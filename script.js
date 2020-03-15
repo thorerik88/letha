@@ -5,7 +5,6 @@ const newsletterMsg = document.querySelector(".message");
 const inputs = document.querySelectorAll("input[type='email']");
 
 const customShoe = document.querySelector(".shopping-cart .selected");
-const totalCost = document.querySelector(".total-cost");
 
 // REMOVE INPUT VALUE ON CLICK
 inputs.forEach(input => {
